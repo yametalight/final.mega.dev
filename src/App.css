@@ -1,63 +1,132 @@
-[
-    {
-        "id":1,
-        "image":"https://www.meram.bel.tr/upload/medya/012323.jpg",
-        "title":"Şükran Mahallesi 4 Adet Tescilli Taşınmazın Rekonstrüksiyon İkmal İnşaat İşi",
-        "Description":"devam eden proje."
-    },
-    {
-        "id":2,
-        "image":"https://www.meram.bel.tr/upload/medya/2075a58d-1cbc-4a1c-bbe0-1f8bd01870de.jpg",
-        "title":"Meram Gödene Evleri Konut Yapı Kooperatifi",
-        "Description":"devam eden proje."
-    },
-    {
-        "id":3,
-        "image":"https://www.meram.bel.tr/upload/medya/caf62bb2-f347-4e27-b80c-e08a42ad8af1.jpg",
-        "title":"Bizim Meram Köyü Konut Yapı Kooperatifi",
-        "Description":"devam eden proje."
-    },
-    {
-        "id":4,
-        "image":"https://www.meram.bel.tr/upload/medya/7_15.jpg",
-        "title":"Meram Yaka Sosyal Tesisi",
-        "Description":"devam eden proje."
-    },
-    {
-        "id":5,
-        "image":"https://www.meram.bel.tr/upload/medya/rf13-jpg-1024X1024.jpg",
-        "title":"Turgutreis Mah. Kentsel Dönüşüm Kat Karşılığı Konut Yapımı",
-        "Description":"devam eden proje."
-    },
-    {
-        "id":6,
-        "image":"https://www.meram.bel.tr/upload/medya/DJI_0002.jpg",
-        "title":"10 Adet Açık Halı Saha Yapımı",
-        "Description":"tamamlanan proje."
-    },
-    {
-        "id":7,
-        "image":"https://www.meram.bel.tr/upload/medya/MG_4303_1200_1.jpg",
-        "title":"Yeniyol Trafik Parkı",
-        "Description":"tamamlanan proje."
-    },
-    {
-        "id":8,
-        "image":"https://www.meram.bel.tr/upload/medya/berlika2.jpg",
-        "title":"Berlika Trafik Eğitim Parkıi",
-        "Description":"tamamlanan proje."
-    },
-    {
-        "id":9,
-        "image":"https://www.meram.bel.tr/upload/medya/DJI_0002_1200.jpg",
-        "title":"Yenice Parkı",
-        "Description":"tamamlanan proje."
-    },
-    {
-        "id":10,
-        "image":"https://www.meram.bel.tr/upload/medya/001_1.jpg",
-        "title":"6 Adet Açık Halı Saha Yapılması",
-        "Description":"tamamlanan proje."
-    }
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
-]
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #4CBB17;
+}
+
+h1 {
+  margin: 15px;
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 1.3px;
+}
+
+input {
+  width: 500px;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: .3px solid black;
+  background-color: #363062;
+  color: white;   
+  border: none;
+}
+input::placeholder{
+  color: white;
+}
+input:focus{
+  outline: none;
+}
+
+h3 {
+  margin-top: 10px;
+  font-family: 'Antic Slab', serif;
+}
+
+p {
+  margin: 10px 0;
+  font-family: 'Antic Slab', serif;
+  margin-bottom: 25px;
+}
+
+.dataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.data {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  background-color: #74cf88;
+  padding-top: 20px;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .3s;
+}
+.data:hover{
+  opacity: .5;
+  transform: scale(1.1);
+}
+
+.link {
+  text-decoration: none;
+}root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
